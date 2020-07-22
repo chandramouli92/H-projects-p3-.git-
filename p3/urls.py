@@ -28,4 +28,8 @@ urlpatterns = [
     path('html_demo4',views.html_demo4,name='html_demo4'),
     path("ab/<ab>",views.ab,name='ab'),
     path("gre/<num>",views.gre,name='gre'),
+    path("add/<num>",views.add,name='add'),
+    path("add1/<a>/<b>",views.add1,name="add1"),
+    
+
 ]

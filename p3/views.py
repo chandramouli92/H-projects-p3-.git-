@@ -29,3 +29,12 @@ def gre(request,num):
         gre=int(a[1])
     res=gre
     return HttpResponse(str(res))
+
+def add(request,num):
+    num=num.split(" ")
+    res=int(num[0])+int(num[1])
+    return HttpResponse(f"<h1>THE SUM IS : {str(res)}</H1>")
+
+def add1(request,a,b):
+    res=int(a)+int(a)
+    return HttpResponse(res)
