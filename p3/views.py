@@ -18,3 +18,14 @@ def html_demo3(request):
 
 def html_demo4(request):
     return render(request,"sample5.html",{'a':10,'b':20})
+def ab(request, ab):
+    gre = list(map(int, ab.split(" ")))
+    return HttpResponse(f"<h1>Maximum num is: {max(gre)}</h1>")
+def gre(request,num):
+    a=num.split(" ")
+    if int(a[0])>int(a[1]):
+        gre=int(a[0])
+    else:
+        gre=int(a[1])
+    res=gre
+    return HttpResponse(str(res))

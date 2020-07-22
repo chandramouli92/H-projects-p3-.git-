@@ -25,5 +25,7 @@ urlpatterns = [
     path('html_demo1',views.html_demo1,name='html_demo1'),
     path('html_demo2',views.html_demo2,name='html_demo2'),
     path('html_demo3',views.html_demo3,name='html_demo3'),
-     path('html_demo4',views.html_demo4,name='html_demo4'),
+    path('html_demo4',views.html_demo4,name='html_demo4'),
+    path("ab/<ab>",views.ab,name='ab'),
+    path("gre/<num>",views.gre,name='gre'),
 ]
